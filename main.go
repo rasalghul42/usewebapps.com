@@ -8,6 +8,7 @@ import (
 	_ "github.com/lib/pq"
 	"usewebapps.com/views"
 	"usewebapps.com/module"
+
 )
 //var homeTemplate *template.Template
 //var contactTemplate *template.Template
@@ -35,9 +36,9 @@ func main() {
 	contactView = views.NewView("bootstrap","views/contact.gohtml")
 	signupView = views.NewView("bootstrap","views/signup.gohtml")
 
-	psqlInfo := fmt.Sprintf("host=%s user=%s password=%s dbname=%s sslmode=disable",host, user, password, dbname)
+	//psqlInfo := fmt.Sprintf("host=%s user=%s password=%s dbname=%s sslmode=disable",host, user, password, dbname)
 
-	module.SelectDATA(psqlInfo)
+	//module.SelectDATA(psqlInfo)
 
 	module.CheckIfError(err)
 
